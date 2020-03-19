@@ -39,6 +39,7 @@ services:
     environment:
       SERVER: ${SERVER:-uwsgi}
       SUPER_USER: ${SUPER_USER:-admin}
+      SUPER_USER: ${SUPER_EMAIL:-admin}
       SUPER_PASS: ${SUPER_PASS:-admin}
 
 volumes:
