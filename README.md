@@ -39,7 +39,7 @@ services:
     environment:
       SERVER: ${SERVER:-uwsgi}
       SUPER_USER: ${SUPER_USER:-admin}
-      SUPER_EMAIL: ${SUPER_EMAIL:-admin}
+      SUPER_EMAIL: ${SUPER_EMAIL:-admin@example.com}
       SUPER_PASS: ${SUPER_PASS:-admin}
 
 volumes:
@@ -179,6 +179,7 @@ services:
     environment:
       SERVER: ${SERVER:-uwsgi}
       SUPER_USER: ${SUPER_USER:-admin}
+      SUPER_EMAIL: ${SUPER_EMAIL:-admin@example.com}
       SUPER_PASS: ${SUPER_PASS:-admin}
 
 volumes:
