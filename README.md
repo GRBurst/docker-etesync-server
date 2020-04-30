@@ -15,7 +15,7 @@ This build follows some tags of the Python official docker images:
 ### docker
 
 ```bash
-docker run  -d -e SUPER_USER=admin -e SUPER_PASS=changeme -p 80:3735 -v /path/on/host:/data grburst/etesync:alpine
+docker run -d -e SUPER_USER=admin -e SUPER_USER=admin@example.com -e SUPER_PASS=changeme -p 80:3735 -v /path/on/host:/data grburst/etesync:alpine
 ```
 
 
@@ -39,7 +39,7 @@ services:
     environment:
       SERVER: ${SERVER:-uwsgi}
       SUPER_USER: ${SUPER_USER:-admin}
-      SUPER_USER: ${SUPER_EMAIL:-admin}
+      SUPER_EMAIL: ${SUPER_EMAIL:-admin}
       SUPER_PASS: ${SUPER_PASS:-admin}
 
 volumes:
